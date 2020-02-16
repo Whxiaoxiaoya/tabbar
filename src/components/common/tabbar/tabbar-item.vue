@@ -1,13 +1,13 @@
 <template>
-  <div class="tabber-item" @click="itemClick()">
+  <div class="tabbar-item" @click="itemClick()">
     <div v-if="!linkActive">
-      <slot name="tabber-img"></slot>
+      <slot name="tabbar-img"></slot>
     </div>
     <div v-if="linkActive">
-      <slot name="tabber-img-active"></slot>
+      <slot name="tabbar-img-active"></slot>
     </div>
     <div :style="linkActiveColor">
-      <slot name="tabber-text"></slot>
+      <slot name="tabbar-text"></slot>
     </div>
   </div>
 </template>
@@ -41,11 +41,11 @@ export default {
 </script>
 
 <style scoped>
-.tabber-item {
+.tabbar-item {
   flex: 1;
   text-align: center;
 }
-.tabber-item img {
+.tabbar-item img {
   width: 20px;
   height: 10px;
 }

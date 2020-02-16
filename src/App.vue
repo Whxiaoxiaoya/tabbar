@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <TabberUse></TabberUse>
+    <tabbar-use></tabbar-use>
   </div>
 </template>
 
 <script>
-import TabberUse from "./components/tabber-use/tabber-use";
+import TabbarUse from "components/content/tabbar-use/tabbar-use";
 export default {
   name: "app",
   components: {
-    TabberUse
+    TabbarUse
   }
 };
 </script>
 
 <style>
-@import "./assets/css/base.css";
+@import "assets/css/base.css";
 </style>
